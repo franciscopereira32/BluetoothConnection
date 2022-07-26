@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     boolean conexao;
     private static String MAC = null;
 
-    Button button, button2, button3, conectar;
+    Button conectar;
     UUID MEU_ID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
     @Override
@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         conectar = (Button)findViewById(R.id.conectar);
-        button = (Button)findViewById(R.id.button);
-        button2 = (Button)findViewById(R.id.button2);
-        button3 = (Button)findViewById(R.id.button3);
 
         myBluetooth = BluetoothAdapter.getDefaultAdapter();
         if(myBluetooth == null){
